@@ -506,7 +506,7 @@ class EarthEngineStore(common.AbstractDataStore):
     raw = common.robust_getitem(
         pixels_getter,
         params,
-        catch=ee.ee_exception.EEException,
+        #catch=ee.ee_exception.EEException,
         **self.getitem_kwargs,
     )
 
